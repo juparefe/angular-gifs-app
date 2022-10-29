@@ -1,0 +1,19 @@
+<!-- <ul>
+    <li *ngFor="let resultado of resultados">
+        {{resultado.title}}
+    </li>
+</ul> -->
+
+<div class="row">
+    <div class="col-md-4 col-sm-6 animate__animated animate__zoomIn" *ngFor="let resultado of resultados">
+        <div class="card">
+            <div class="card-body">
+                <p class="card-text text-nowrap" style="overflow: hidden;">
+                    {{resultado.title}}
+                </p>
+            </div>
+        </div>
+        <img [src]="resultado.images.downsized_medium.url"
+             [alt]="resultado.title" class="card-img-top">
+    </div>
+</div>

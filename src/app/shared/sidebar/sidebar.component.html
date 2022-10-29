@@ -1,0 +1,9 @@
+<div class="bg-dark border-rigth p-3" id="sidebar">
+    <h3 class="text-light">Giffs-App</h3>
+    <hr class="text-white" />
+    <div class="list-group list-reset">
+        <a href="#" class="list-group-item" *ngFor="let search of historial;" (click)="buscar(search)">
+            {{search | titlecase}}
+        </a>
+    </div>
+</div>
